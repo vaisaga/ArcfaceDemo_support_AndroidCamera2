@@ -1,0 +1,2 @@
+# ArcfaceDemo_support_AndroidCamera2
+虹软3.0demo基础上增加对android camera2的支持
