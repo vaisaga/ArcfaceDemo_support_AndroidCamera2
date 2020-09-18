@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FaceAttrPreviewActivity">
+
+    <!--这里用TextureView，而不是SurfaceView，
+        从性能和安全性角度出发，使用播放器优先选SurfaceView，
+        在android 7.0上系统surfaceview的性能比TextureView更有优势-->
+    <TextureView
+        android:id="@+id/texture_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.arcsoft.arcfacedemo.widget.FaceRectView
+        android:id="@+id/face_rect_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/common_bottom_margin"
+        android:onClick="switchCamera"
+        android:text="@string/switch_camera" />
+
+</FrameLayout>
