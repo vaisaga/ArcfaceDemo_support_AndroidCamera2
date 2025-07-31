@@ -1,8 +1,9 @@
 # ArcfaceDemo_support_AndroidCamera2
-虹软3.0demo基础上增加对android camera2的支持
+Add support for Android Camera2 based on ArcSoft 3.0 Demo  
+
 
 Change Logs:  
-2020.9.18  
-1，在原ArcfaceDemo基础上添加com.arcsoft.arcfacedemo.util.camera.Camera2Helper  
-2，修改com.arcsoft.arcfacedemo.activity.FaceAttrPreviewActivity人脸属性检测(视频)，由原来使用cameraHelper改为使用camera2Helper  
-3，demo中其他功能暂未修改，但可以参考FaceAttrPreviewActivity进行camera1和camera2使用的切换  
+2020-09-18  
+1. Added `com.arcsoft.arcfacedemo.util.camera.Camera2Helper` based on the original ArcFaceDemo.  
+2. Modified `com.arcsoft.arcfacedemo.activity.FaceAttrPreviewActivity` (for face attribute detection in video), changing from using `cameraHelper` to `camera2Helper`.  
+3. Other functions in the demo remain unmodified for now, but you can refer to `FaceAttrPreviewActivity` for switching between `camera1` and `camera2` usage.
